@@ -144,6 +144,7 @@
 		A37A7A322AF5ADE8003789FC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A37A7A452AF7147E003789FC /* ContentUnAvailableCustomView.swift */,
 				A37A7A302AF5AD50003789FC /* StepperView+Extension.swift */,
 				A3829BE62AF2EA3E00B927FF /* URL+Extension.swift */,
 				A37A7A2A2AF5AC4E003789FC /* BorderedView+ViewModifier.swift */,
@@ -196,7 +197,6 @@
 				A37A7A392AF5B863003789FC /* StationView.swift */,
 				A37A7A412AF6DBF6003789FC /* StationListView.swift */,
 				A37A7A472AF714AD003789FC /* StationRow.swift */,
-				A37A7A452AF7147E003789FC /* ContentUnAvailableCustomView.swift */,
 			);
 			path = StationView;
 			sourceTree = "<group>";

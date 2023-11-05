@@ -28,10 +28,10 @@ struct LetsGoView: View {
                 .customBoarderStyle()
         }
         .sheet(isPresented: $isPresented) {
-            FlightsListView(flights: flight.flights, isPresented: $isPresented)
+            FlightsListView(flightDates: flight.flightDates, isPresented: $isPresented)
         }
         .sheet(isPresented: $isErrorPresented) {
-            FlightsListView(flights: flight.flights, isPresented: $isErrorPresented)
+            ContentUnAvailableCustomView(isPresented: $isErrorPresented)
         }
     }
 }

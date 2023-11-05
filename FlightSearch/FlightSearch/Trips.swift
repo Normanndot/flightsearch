@@ -20,9 +20,10 @@ struct Trip: Decodable {
 // MARK: - DateElement
 struct DateElement: Identifiable, Decodable {
     let id = UUID()
+    let dateOut: String
     let flights: [Flight]
     private enum CodingKeys: CodingKey {
-        case flights
+        case flights, dateOut
     }
 }
 

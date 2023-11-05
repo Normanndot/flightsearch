@@ -8,7 +8,6 @@
 import Foundation
 import ServiceHandler
 
-
 @Observable
 class FlightSearch {
     var allStations: [String: Station] = [:]
@@ -16,9 +15,10 @@ class FlightSearch {
     var destination: Station? = nil
     var fromDate: Date = Date()
     var passengersList: (adult: Int, teen: Int, childrens: Int, infants: Int) = (1, 0, 0, 0)
-    let service: FlightSearching
-    var flights: [Flight] = []
+    var flightDates: [DateElement] = []
 
+    private let service: FlightSearching
+    
     init(service: FlightSearchingService = FlightSearchingService(service: NetworkService())) {
         self.service = service
     }
@@ -35,6 +35,6 @@ class FlightSearch {
     
     func searchFlight() async throws {
         let response = try await service.searchFlight(details: self)
-        flights = response.trips![0].dates[0].flights
+        flightDates = response.trips![0].dates
     }
 }

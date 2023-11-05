@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct FlightsListView: View {
-    let flights: [Flight]
+    let flightDates: [DateElement]
     @Binding var isPresented: Bool
     
     var body: some View {
-        
         VStack {
+            let flights = flightDates[0].flights
             if flights.isEmpty {
                 NoFlightView(isPresented: $isPresented)
             } else {
@@ -26,8 +26,23 @@ struct FlightsListView: View {
                     }
                     .padding()
                 }
-                List(flights) { flight in
-                    FlightRow(flight: flight)
+
+                GeometryReader { geometry in
+                    ScrollView(.horizontal, showsIndicators: true) {
+                        LazyHStack {
+                            ForEach(flightDates) { date in
+                                VStack {
+                                    Text("<-- \(date.dateOut.toMMMddYYYY) --> ")
+                                        .padding()
+                                    List(date.flights) { flight in
+                                        FlightRow(flight: flight)
+                                    }
+                                    .frame(width: geometry.size.width, height: geometry.size.height - 100)
+                                }
+                            }
+                        }
+                    }
+                    .scrollTargetBehavior(.paging)
                 }
             }
         }
