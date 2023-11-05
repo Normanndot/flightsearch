@@ -69,8 +69,8 @@
 		A3829BE42AF2EA2B00B927FF /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 		A3829BE62AF2EA3E00B927FF /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
 		A3829BEA2AF2EF5400B927FF /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		A384B4412AF83F78007223A4 /* ServiceHandler-main */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "ServiceHandler-main"; path = "FlightSearch/ServiceHandler-main"; sourceTree = "<group>"; };
 		A3B5EC392AF41141002EC7DE /* FlightSearchingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearchingService.swift; sourceTree = "<group>"; };
-		A3DAB6A52AF7B60D00B3E1B2 /* ServiceHandler-main */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "ServiceHandler-main"; path = "../../../../Downloads/ServiceHandler-main"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +99,7 @@
 		A378D8552AF19C15003D3BDB = {
 			isa = PBXGroup;
 			children = (
-				A3DAB6A52AF7B60D00B3E1B2 /* ServiceHandler-main */,
+				A384B4412AF83F78007223A4 /* ServiceHandler-main */,
 				A378D8602AF19C15003D3BDB /* FlightSearch */,
 				A378D85F2AF19C15003D3BDB /* Products */,
 				A3DAB6A62AF7B62D00B3E1B2 /* Frameworks */,
