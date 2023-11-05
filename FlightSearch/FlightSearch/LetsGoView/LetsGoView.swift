@@ -10,15 +10,29 @@ import ServiceHandler
 
 struct LetsGoView: View {
     @Environment(FlightSearch.self) private var flight
+    @State private var isPresented: Bool = false
+    @State private var isErrorPresented: Bool = false
 
     var body: some View {
         Button {
             Task {
-                try await flight.searchFlight()
+                do {
+                    try await flight.searchFlight()
+                    isPresented.toggle()
+                } catch {
+                    isErrorPresented.toggle()
+                }
             }
         } label: {
             Text("Let's go")
                 .customBoarderStyle()
         }
+        .sheet(isPresented: $isPresented) {
+            FlightsListView(flights: flight.flights, isPresented: $isPresented)
+        }
+        .sheet(isPresented: $isErrorPresented) {
+            FlightsListView(flights: flight.flights, isPresented: $isErrorPresented)
+        }
     }
 }
+

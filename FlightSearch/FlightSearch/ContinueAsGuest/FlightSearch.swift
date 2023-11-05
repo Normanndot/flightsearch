@@ -17,6 +17,7 @@ class FlightSearch {
     var fromDate: Date = Date()
     var passengersList: (adult: Int, teen: Int, childrens: Int, infants: Int) = (1, 0, 0, 0)
     let service: FlightSearching
+    var flights: [Flight] = []
 
     init(service: FlightSearchingService = FlightSearchingService(service: NetworkService())) {
         self.service = service
@@ -32,7 +33,8 @@ class FlightSearch {
         }
     }
     
-    func searchFlight() async throws -> Stations {
-        return try await service.searchFlight(details: self)
+    func searchFlight() async throws {
+        let response = try await service.searchFlight(details: self)
+        flights = response.trips![0].dates[0].flights
     }
 }

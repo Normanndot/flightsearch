@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A341ACA02AF7B7F700CF69E5 /* Trips.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341AC9F2AF7B7F700CF69E5 /* Trips.swift */; };
+		A341ACA32AF7B9E600CF69E5 /* FlightsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341ACA22AF7B9E600CF69E5 /* FlightsListView.swift */; };
+		A341ACA52AF7C89900CF69E5 /* NoFlightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341ACA42AF7C89900CF69E5 /* NoFlightView.swift */; };
+		A341ACA72AF7C8BE00CF69E5 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341ACA62AF7C8BE00CF69E5 /* String+Extension.swift */; };
+		A341ACA92AF7C8D700CF69E5 /* FlightRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341ACA82AF7C8D700CF69E5 /* FlightRow.swift */; };
+		A341ACAB2AF7C8ED00CF69E5 /* FareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341ACAA2AF7C8ED00CF69E5 /* FareView.swift */; };
 		A378D8622AF19C15003D3BDB /* FlightSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A378D8612AF19C15003D3BDB /* FlightSearchApp.swift */; };
 		A378D8642AF19C15003D3BDB /* GuestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A378D8632AF19C15003D3BDB /* GuestView.swift */; };
 		A378D8662AF19C16003D3BDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A378D8652AF19C16003D3BDB /* Assets.xcassets */; };
@@ -25,15 +31,21 @@
 		A37A7A482AF714AD003789FC /* StationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37A7A472AF714AD003789FC /* StationRow.swift */; };
 		A37A7A4B2AF7150A003789FC /* Passengers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37A7A4A2AF7150A003789FC /* Passengers.swift */; };
 		A37A7A4D2AF71522003789FC /* Passenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37A7A4C2AF71522003789FC /* Passenger.swift */; };
-		A3829BE12AF2E95000B927FF /* ServiceHandler in Frameworks */ = {isa = PBXBuildFile; productRef = A3829BE02AF2E95000B927FF /* ServiceHandler */; };
 		A3829BE32AF2EA0E00B927FF /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3829BE22AF2EA0E00B927FF /* BaseURL.swift */; };
 		A3829BE52AF2EA2B00B927FF /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3829BE42AF2EA2B00B927FF /* Requests.swift */; };
 		A3829BE72AF2EA3E00B927FF /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3829BE62AF2EA3E00B927FF /* URL+Extension.swift */; };
 		A3829BEB2AF2EF5400B927FF /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3829BEA2AF2EF5400B927FF /* Station.swift */; };
 		A3B5EC3A2AF41141002EC7DE /* FlightSearchingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5EC392AF41141002EC7DE /* FlightSearchingService.swift */; };
+		A3DAB6A82AF7B62D00B3E1B2 /* ServiceHandler in Frameworks */ = {isa = PBXBuildFile; productRef = A3DAB6A72AF7B62D00B3E1B2 /* ServiceHandler */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A341AC9F2AF7B7F700CF69E5 /* Trips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trips.swift; sourceTree = "<group>"; };
+		A341ACA22AF7B9E600CF69E5 /* FlightsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsListView.swift; sourceTree = "<group>"; };
+		A341ACA42AF7C89900CF69E5 /* NoFlightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoFlightView.swift; sourceTree = "<group>"; };
+		A341ACA62AF7C8BE00CF69E5 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		A341ACA82AF7C8D700CF69E5 /* FlightRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightRow.swift; sourceTree = "<group>"; };
+		A341ACAA2AF7C8ED00CF69E5 /* FareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FareView.swift; sourceTree = "<group>"; };
 		A378D85E2AF19C15003D3BDB /* FlightSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlightSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A378D8612AF19C15003D3BDB /* FlightSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearchApp.swift; sourceTree = "<group>"; };
 		A378D8632AF19C15003D3BDB /* GuestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestView.swift; sourceTree = "<group>"; };
@@ -58,6 +70,7 @@
 		A3829BE62AF2EA3E00B927FF /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
 		A3829BEA2AF2EF5400B927FF /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		A3B5EC392AF41141002EC7DE /* FlightSearchingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearchingService.swift; sourceTree = "<group>"; };
+		A3DAB6A52AF7B60D00B3E1B2 /* ServiceHandler-main */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "ServiceHandler-main"; path = "../../../../Downloads/ServiceHandler-main"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,18 +78,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3829BE12AF2E95000B927FF /* ServiceHandler in Frameworks */,
+				A3DAB6A82AF7B62D00B3E1B2 /* ServiceHandler in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A341ACA12AF7B9C400CF69E5 /* Flights */ = {
+			isa = PBXGroup;
+			children = (
+				A341ACA22AF7B9E600CF69E5 /* FlightsListView.swift */,
+				A341ACA82AF7C8D700CF69E5 /* FlightRow.swift */,
+				A341ACAA2AF7C8ED00CF69E5 /* FareView.swift */,
+				A341ACA42AF7C89900CF69E5 /* NoFlightView.swift */,
+			);
+			path = Flights;
+			sourceTree = "<group>";
+		};
 		A378D8552AF19C15003D3BDB = {
 			isa = PBXGroup;
 			children = (
+				A3DAB6A52AF7B60D00B3E1B2 /* ServiceHandler-main */,
 				A378D8602AF19C15003D3BDB /* FlightSearch */,
 				A378D85F2AF19C15003D3BDB /* Products */,
+				A3DAB6A62AF7B62D00B3E1B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,10 +121,12 @@
 				A37A7A342AF5AE3B003789FC /* ContinueAsGuest */,
 				A37A7A352AF5AE51003789FC /* FlightSearchView */,
 				A37A7A432AF70364003789FC /* LetsGoView */,
+				A341ACA12AF7B9C400CF69E5 /* Flights */,
 				A37A7A322AF5ADE8003789FC /* Extensions */,
 				A3829BE22AF2EA0E00B927FF /* BaseURL.swift */,
 				A3829BE42AF2EA2B00B927FF /* Requests.swift */,
 				A3829BEA2AF2EF5400B927FF /* Station.swift */,
+				A341AC9F2AF7B7F700CF69E5 /* Trips.swift */,
 				A378D8652AF19C16003D3BDB /* Assets.xcassets */,
 				A378D8672AF19C16003D3BDB /* Preview Content */,
 			);
@@ -120,6 +148,7 @@
 				A3829BE62AF2EA3E00B927FF /* URL+Extension.swift */,
 				A37A7A2A2AF5AC4E003789FC /* BorderedView+ViewModifier.swift */,
 				A37A7A1F2AF59D64003789FC /* Date+Extension.swift */,
+				A341ACA62AF7C8BE00CF69E5 /* String+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -182,6 +211,13 @@
 			path = PassengerView;
 			sourceTree = "<group>";
 		};
+		A3DAB6A62AF7B62D00B3E1B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -199,7 +235,7 @@
 			);
 			name = FlightSearch;
 			packageProductDependencies = (
-				A3829BE02AF2E95000B927FF /* ServiceHandler */,
+				A3DAB6A72AF7B62D00B3E1B2 /* ServiceHandler */,
 			);
 			productName = FlightSearch;
 			productReference = A378D85E2AF19C15003D3BDB /* FlightSearch.app */;
@@ -230,7 +266,6 @@
 			);
 			mainGroup = A378D8552AF19C15003D3BDB;
 			packageReferences = (
-				A3829BDF2AF2E95000B927FF /* XCRemoteSwiftPackageReference "ServiceHandler" */,
 			);
 			productRefGroup = A378D85F2AF19C15003D3BDB /* Products */;
 			projectDirPath = "";
@@ -260,10 +295,15 @@
 			files = (
 				A37A7A282AF5A14B003789FC /* FlightSearchView.swift in Sources */,
 				A378D8642AF19C15003D3BDB /* GuestView.swift in Sources */,
+				A341ACA92AF7C8D700CF69E5 /* FlightRow.swift in Sources */,
 				A3829BE52AF2EA2B00B927FF /* Requests.swift in Sources */,
+				A341ACA32AF7B9E600CF69E5 /* FlightsListView.swift in Sources */,
 				A37A7A2B2AF5AC4E003789FC /* BorderedView+ViewModifier.swift in Sources */,
+				A341ACA02AF7B7F700CF69E5 /* Trips.swift in Sources */,
 				A37A7A462AF7147E003789FC /* ContentUnAvailableCustomView.swift in Sources */,
 				A37A7A422AF6DBF6003789FC /* StationListView.swift in Sources */,
+				A341ACA72AF7C8BE00CF69E5 /* String+Extension.swift in Sources */,
+				A341ACAB2AF7C8ED00CF69E5 /* FareView.swift in Sources */,
 				A37A7A4B2AF7150A003789FC /* Passengers.swift in Sources */,
 				A37A7A312AF5AD50003789FC /* StepperView+Extension.swift in Sources */,
 				A37A7A4D2AF71522003789FC /* Passenger.swift in Sources */,
@@ -275,6 +315,7 @@
 				A3829BE72AF2EA3E00B927FF /* URL+Extension.swift in Sources */,
 				A37A7A3E2AF5BA3F003789FC /* PassengerView.swift in Sources */,
 				A3829BE32AF2EA0E00B927FF /* BaseURL.swift in Sources */,
+				A341ACA52AF7C89900CF69E5 /* NoFlightView.swift in Sources */,
 				A37A7A482AF714AD003789FC /* StationRow.swift in Sources */,
 				A3829BEB2AF2EF5400B927FF /* Station.swift in Sources */,
 				A37A7A402AF5C402003789FC /* LetsGoView.swift in Sources */,
@@ -483,21 +524,9 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		A3829BDF2AF2E95000B927FF /* XCRemoteSwiftPackageReference "ServiceHandler" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Normanndot/ServiceHandler.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		A3829BE02AF2E95000B927FF /* ServiceHandler */ = {
+		A3DAB6A72AF7B62D00B3E1B2 /* ServiceHandler */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A3829BDF2AF2E95000B927FF /* XCRemoteSwiftPackageReference "ServiceHandler" */;
 			productName = ServiceHandler;
 		};
 /* End XCSwiftPackageProductDependency section */

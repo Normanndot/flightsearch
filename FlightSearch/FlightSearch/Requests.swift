@@ -22,7 +22,7 @@ struct Requests {
     }
     
     struct FlightSearchAPI {
-        static func searchFlight(details: FlightSearch) -> Request<Stations> {
+        static func searchFlight(details: FlightSearch) -> Request<FlightSearchResponse> {
             .init(
                 url: .init(baseURL: BaseURL.flightSearch, details: details)!,
                 httpMethod: .get

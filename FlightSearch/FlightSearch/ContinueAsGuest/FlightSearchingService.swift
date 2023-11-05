@@ -10,7 +10,7 @@ import ServiceHandler
 
 protocol FlightSearching {
     func fetchStations() async throws -> Stations
-    func searchFlight(details: FlightSearch) async throws -> Stations
+    func searchFlight(details: FlightSearch) async throws -> FlightSearchResponse
 }
 
 class FlightSearchingService: FlightSearching {
@@ -24,7 +24,7 @@ class FlightSearchingService: FlightSearching {
         try await service.fetch(request: Requests.AirportStation.lists())
     }
     
-    func searchFlight(details: FlightSearch) async throws -> Stations {
+    func searchFlight(details: FlightSearch) async throws -> FlightSearchResponse {
         try await service.fetch(request: Requests.FlightSearchAPI.searchFlight(details: details))
     }
 }
