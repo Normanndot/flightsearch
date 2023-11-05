@@ -11,29 +11,35 @@ struct StationListView: View {
     @Bindable var flight: FlightSearch
     @Binding var isPresented: Bool
     let stationType: StationType
-
+    @State private var searchText = ""
+    
     var body: some View {
         if stationLists.isEmpty {
             ContentUnAvailableCustomView(isPresented: $isPresented)
         } else {
-            List(stationLists.keys.sorted(), id: \.self) { key in
-                let station = stationLists[key]
+            let list = stationLists
 
-                Button {
-                    if stationType == .origin {
-                        flight.origin = station
-                        flight.destination = nil
-                    } else {
-                        flight.destination = station
+            NavigationStack {
+                List(list.keys.sorted(), id: \.self) { key in
+                    let station = list[key]
+
+                    Button {
+                        if stationType == .origin {
+                            flight.origin = station
+                            flight.destination = nil
+                        } else {
+                            flight.destination = station
+                        }
+                        isPresented.toggle()
+                    } label: {
+                        StationRow(station: station)
                     }
-                    isPresented.toggle()
-                } label: {
-                    StationRow(station: station)
+                    .padding()
                 }
-                .padding()
+                .searchable(text: $searchText)
+                .navigationTitle("Choose Departure")
+                .navigationBarBackButtonHidden(true)
             }
-            .navigationTitle("Choose Departure")
-            .navigationBarBackButtonHidden(true)
         }
     }
     
@@ -48,6 +54,12 @@ struct StationListView: View {
                     let station = flight.allStations[aMarket.code]
                     list[aMarket.code] = station
                 }
+            }
+        }
+        
+        if !searchText.isEmpty {
+            list = list.filter{ (key: String, value: Station) in
+                value.countryName.contains(searchText)
             }
         }
         
