@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "servicehandler",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Normanndot/ServiceHandler.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "a82b32461ce97e76c9bb2618fd83685d1c4bbd2c"
+      }
+    }
+  ],
+  "version" : 2
+}
